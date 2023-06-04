@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=iso-8859-1" http-equiv="content-type">
+    <title>John Harlim</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript">
+var time = 3000;
+var numofitems = 7;
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "gl"+thisitem;
+  divname="subglobal"+thisitem;  
+	this.numberofmenuitems = 7;
+	this.caller = document.getElementById(callname);
+	this.thediv = document.getElementById(divname);
+	this.thediv.style.visibility = startstate;
+}
+				 
+//menu methods
+function ehandler(event,theobj){
+  for (var i=1; i<= theobj.numberofmenuitems; i++){
+	  var shutdiv =eval( "menuitem"+i+".thediv");
+    shutdiv.style.visibility="hidden";
+	}
+	theobj.thediv.style.visibility="visible";
+}
+				
+function closesubnav(event){
+  if ((event.clientY <48)||(event.clientY > 107)){
+    for (var i=1; i<= numofitems; i++){
+      var shutdiv =eval('menuitem'+i+'.thediv');
+			shutdiv.style.visibility='hidden';
+		}  
+	}
+}
+// -->
+</script> <style type="text/css">
+<!--
+body {
+	background-color: #07085A;
+}
+-->
+</style></head>
+  <body onmousemove="closesubnav(event);">
+    <!-- end globalNav -->
+    <div style="text-align: center;" id="masthead"><span style="color: white;"><br>
+        <br>
+      </span>
+      <div><span style="color: white;"><font size="20">John Harlim</font></span></div>
+      <h2><span style="color: white;"></span> </h2>
+    </div>
+    <!-- end masthead -->
+    <div id="pagecell1">
+      <!--pagecell1--> <img alt="" src="Website/tl_curve_white.gif" id="tl" height="6"
+        width="6">
+      <img alt="" src="Website/tr_curve_white.gif" id="tr" height="6" width="6">
+      <div id="pageName"> </div>
+      <div id="pageNav">
+        <div id="sectionLinks"> <a href="index.html">HOME</a> <a href="teaching.htm">Teaching</a>
+          <a href="publications.htm">Publications</a> <a href="cvharlimfeb2017.pdf">CV</a>
+        </div>
+        <div class="relatedLinks">
+          <h3>Other Links</h3>
+          <a href="http://www.math.psu.edu" target="_blank">Dept. of Mathematics</a>
+          <a href="http://www.met.psu.edu/" target="_blank">Dept. of Meteorology</a>
+          <a href="http://www.ics.psu.edu/" target="_blank">Inst. for
+            CyberScience</a> <a href="http://adapt.psu.edu/" target="_blank">ADAPT</a></div>
+      </div>
+      <div id="content">
+        <div class="feature">
+          <p><strong><font face="Arial" size="3">Manuscripts under reviewed</font></strong></p>
+          <p>[4] J. Harlim, D. Sanz-Alonso, and R. Yang<br>
+          <em>Machine learning for prediction with missing dynamics</em> <a href="http://arxiv.org/abs/1910.05861">[arXiv]</a>
+          </p>
+          <p>[3] J. Harlim, S.W. Jiang, S. Liang, and H. Yang<br>
+          <em>Machine learning for prediction with missing dynamics</em> <a href="http://arxiv.org/abs/1910.05861">[arXiv]</a>
+          </p>
+          <p>[2] S.W. Jiang and J. Harlim<br>
+            <em>Modeling of missing dynamical systems: Deriving parametric models using a nonparametric framework</em> <a href="http://arxiv.org/abs/1905.08082">[arXiv]</a>
+          </p>
+          <p>[1] H. Antil, T. Berry, and J. Harlim<br>
+            <em>Fractional diffusion maps</em> <a href="http://arxiv.org/abs/1810.03952">[arXiv]</a>
+          </p>
+          <p> <strong><font face="Arial" size="3">Books</font></strong> </p>
+          <p>[2] J. Harlim<br>
+            <em> Data-driven computational methods: Parameter and operator
+              estimations</em><br>
+            <a href="http://www.cambridge.org/9781108472470">Cambridge
+              University Press, UK, 2018.&nbsp;</a><br>
+            <a href="http://arxiv.org/abs/1803.07711">Chapter 1 [arXiv]&nbsp;</a>
+          </p>
+          <p>[1] A.J. Majda and J. Harlim<br>
+            <em> Filtering complex turbulent systems</em><br>
+            <a href="http://www.cambridge.org/9781107016668">Cambridge
+              University Press, UK, 2012.</a> </p>
+          <p> <strong><font face="Arial" size="3">Book Chapters</font></strong>
+          </p>
+          <p>[2] J. Harlim<br>
+            <em>Model error in data assimilation</em><br>
+            <a href="http://www.cambridge.org/9781107118140">Nonlinear and
+              Stochastic Climate Dynamics, Eds. C.L.E. Franzke and T.J. O'Kane,
+              Cambridge University Press, pp.276-317, 2017.</a> <a href="http://arxiv.org/abs/1311.3579">[arXiv]</a></p>
+          <p>[1] J. Harlim <br>
+            <em> Framework and mathematical strategies for filtering or data
+              assimilation </em><br>
+            <a href="http://www.springer.com/us/book/9783540705284">Encyclopedia
+              of Applied and Computational Mathematics, Ed. B. Engquist,
+              Springer, pp.559-563, 2015.</a></p>
+          <p><strong><font face="Arial" size="3">Journal Publications</font></strong>
+          </p>
+        <p>[46] F. Gilani and J. Harlim<br>
+            <em>Approximating solutions of linear elliptic PDE's on smooth
+              manifold using local kernels</em><br><a href="http://dx.doi.org/10.1016/j.jcp.2019.06.034"> J. Comput. Phys. 395, 563-582,
+              2019. </a> <a href="http://arxiv.org/abs/1809.05894">[arXiv]</a>
+          </p>
+        <p>[45] S.W. Jiang and J. Harlim<br>
+            <em>Parameter estimation with data-driven nonparametric likelihood
+              functions</em><br><a href="http://dx.doi.org/10.3390/e21060559"> Entropy 21(6), 559, 
+              2019. </a> 
+              <a href="http://arxiv.org/abs/1804.03272">[arXiv]</a>
+          </p>
+          
+          <p>[44] H. Zhang, X. Li, and J. Harlim<br>
+            <em>A parameter estimation method using the linear response
+              statistics: Numerical scheme</em> <br>
+            <a href="http://dx.doi.org/10.1063/1.5081744"> Chaos 29, 033101,
+              2019. </a> 
+            <a href="http://arxiv.org/abs/1711.05786">[arXiv]</a> </p>
+          <p>[43] M. De La Chevrotière and J. Harlim<br>
+            <em>Data-driven localization mappings in filtering the
+              monsoon-Hadley multicloud convective flows</em> <br><a href="http://dx.doi.org/10.1175/MWR-D-17-0381.1">
+              Mon. Wea. Rev. 146(4), 1197-1218, 2018. </a> <a href="http://arxiv.org/abs/1712.04610">[arXiv]</a></p>
+          <p>[42] W. Hao and J. Harlim<br>
+            <em> An equation-by-equation algorithm for solving the
+              multidimensional moment constrained maximum entropy problem</em> <br>
+            <a href="http://dx.doi.org/10.2140/camcos.2018.13.189">Comm. App.
+              Math. Comp. Sci. 13(2), 189-214, 2018.</a> <a href="http://arxiv.org/abs/1702.02242">[arXiv]</a><br>
+            <a href="MaxentVideos/">Supplementary movies</a>, <a href="https://github.com/whao2008/EBE">Supplementary
+              codes (in Matlab)</a> </p>
+          <p>[41] J. Harlim and H. Yang<br>
+            <em>Diffusion forecasting model with basis functions from QR
+              decomposition</em> <br>
+            <a href="http://dx.doi.org/10.1007/s00332-017-9430-1"> J. Nonlinear
+              Sci. 28(3), 847-872, 2018.</a> <a href="http://arxiv.org/abs/1708.00389">[arXiv]</a>
+          </p>
+          <p>[40] J. Harlim, X. Li, and H. Zhang<br>
+            <em> A parameter estimation method using the linear response
+              statistics </em><br>
+            <a href="http://dx.doi.org/10.1007/s10955-017-1788-9"> J. Stat.
+              Phys. 168(1), 146-170, 2017.</a> <a href="http://arxiv.org/abs/1612.01869">[arXiv]</a>
+          </p>
+          <p>[39] T. Berry and J. Harlim<br>
+            <em> Correcting biased observation model error in data assimilation</em><br>
+            <a href="http://dx.doi.org/10.1175/MWR-D-16-0428.1"> Mon. Wea. Rev.
+              145(7), 2833-2853, 2017.&nbsp;</a> <a href="http://arxiv.org/abs/1611.05405">[arXiv]</a>
+          </p>
+          <p>[38] M. De La Chevrotière and J. Harlim<br>
+            <em>A data-driven method for improving the correlation estimation in
+              serial ensemble Kalman filters</em><br>
+            <a href="http://dx.doi.org/10.1175/MWR-D-16-0109.1"> Mon. Wea. Rev.
+              145(3), 985-1001, 2017. </a> <a href="http://arxiv.org/abs/1607.02538">[arXiv]</a></p>
+          <p>[37] T. Berry and J. Harlim<br>
+            <em> Iterated diffusion maps for feature identification</em><br>
+            <a href="http://dx.doi.org/10.1016/j.acha.2016.08.005">Appl. Comput.
+              Harmon. Anal. 45(1), 84-119, 2018.</a> <a href="http://arxiv.org/abs/1509.07707">[arXiv]</a>
+          </p>
+          <p>[36] T. Berry, D. Giannakis, and J. Harlim<br>
+            <em> Reply to "Comments on 'Nonparametric forecasting of
+              low-dimensional dynamical systems' "</em><br>
+            <a href="http://dx.doi.org/10.1103/PhysRevE.93.036202">Phys. Rev. E
+              93, 036202, 2016.</a> <br>
+          </p>
+          <p>[35] T. Berry and J. Harlim<br>
+            <em> Forecasting turbulent modes with nonparametric models: Learning
+              from noisy data</em><br>
+            <a href="http://dx.doi.org/10.1016/j.physd.2016.01.012">Physica D
+              320, 57-76, 2016.</a> <a href="http://arxiv.org/abs/1501.06848">[arXiv]</a>
+          </p>
+          <p>[34] T. Berry and J. Harlim<br>
+            <em> Semiparametric modeling: Correcting low-dimensional model error
+              in parametric models</em><br>
+            <a href="http://dx.doi.org/10.1016/j.jcp.2015.12.043">J. Comput.
+              Phys. 308, 305-321, 2016.</a> <a href="http://arxiv.org/abs/1502.07766">[arXiv]</a></p>
+          <p>[33] T. Berry and J. Harlim<br>
+            <em>Nonparametric uncertainty quantification for stochastic gradient
+              flows</em><br>
+            <a href="http://dx.doi.org/10.1137/14097940X">SIAM/ASA J.
+              Uncertainty Quantification 3(1), 484-508, 2015.</a> <a href="http://arxiv.org/abs/1407.6972">[arXiv]</a><br>
+            <a href="DMUQvideos/">Supplementary movies</a></p>
+          <p>[32] J. Harlim and X. Li<br>
+            <em> Parametric reduced models for the nonlinear Schrödinger
+              equation </em><br>
+            <a href="http://dx.doi.org/10.1103/PhysRevE.91.053306">Phys. Rev. E
+              91 053306, 2015. </a><a href="http://arxiv.org/abs/1502.04310">[arXiv]</a></p>
+          <p>[31] Y. Zhen and J. Harlim<br>
+            <em> Adaptive error covariance estimation methods for ensemble
+              Kalman filtering</em> <br>
+            <a href="http://dx.doi.org/10.1016/j.jcp.2015.03.061">J. Comput.
+              Phys. 294, 619-638, 2015.</a> <a href="http://arxiv.org/abs/1411.1308">[arXiv]</a></p>
+          <p>[30] T. Berry, D. Giannakis, and J. Harlim<br>
+            <em> Nonparametric forecasting of low-dimensional dynamical systems</em><br>
+            <a href="http://dx.doi.org/10.1103/PhysRevE.91.032915">Phys. Rev. E
+              91 032915, 2015.</a> <a href="http://arxiv.org/abs/1411.5069">[arXiv]</a><br>
+            <a href="ShiftOpVideos/">Supplementary movies</a></p>
+          <p>[29] T. Berry and J. Harlim<br>
+            <em>Variable bandwidth diffusion kernels</em><br>
+            <a href="http://dx.doi.org/10.1016/j.acha.2015.01.001">Appl. Comput.
+              Harmon. Anal. 40, 68-96, 2016.</a> <a href="http://arxiv.org/abs/1406.5064">[arXiv]</a></p>
+          <p>[28] J. Harlim, H. Hong, and J.L. Robbins<br>
+            <em>An algebraic method for constructing stable and consistent
+              autoregressive filters</em><br>
+            <a href="http://dx.doi.org/10.1016/j.jcp.2014.12.004">J. Comput.
+              Phys. 283, 241-257, 2015.</a> <a href="http://arxiv.org/abs/1412.1392">[arXiv]</a><br>
+            <a href="https://www.dropbox.com/s/7x9snv0v2nkkyh4/algebraic.mw?dl=0">
+              Supplementary code (in MAPLE)</a></p>
+          <p>[27] T. Berry and J. Harlim<br>
+            <em>Linear theory for filtering nonlinear multiscale systems with
+              model error</em><br>
+            <a href="http://dx.doi.org/10.1098/rspa.2014.0168">Proc. R. Soc. A
+              (2014) 470, 20140168</a> <a href="http://arxiv.org/abs/1311.1831">[arXiv]</a>
+          </p>
+          <p>[26] J. Harlim, A. Mahdi, and A.J. Majda<br>
+            <em> An ensemble Kalman filter for statistical estimation of physics
+              constrained nonlinear regression models</em><br>
+            <a href="http://dx.doi.org/10.1016/j.jcp.2013.10.025">J. Comput.
+              Phys. 257, Part A, 782-812, 2014. </a><a href="paper/hmm2013_rev.pdf"
+              class="style4">[pdf]</a>
+          </p>
+          <p>[25] G.A. Gottwald and J. Harlim<br>
+            <em> The role of additive and multiplicative noise in filtering
+              complex dynamical systems</em><br>
+            <a href="http://dx.doi.org/10.1098/rspa.2013.0096">Proc. R. Soc. A
+              (2013) 469, 20130096.</a> <a href="paper/inflation_GH.pdf" class="style4">[pdf]</a></p>
+          <p>[24] E.S. Bakunova and J. Harlim<br>
+            <em> Optimal filtering of complex turbulent systems with memory
+              depth through consistency constraints</em><br>
+            <a href="http://dx.doi.org/10.1016/j.jcp.2012.11.028">J. Comput.
+              Phys. 237, 320-343, 2013.</a> <a href="paper/multistepfilter_101112.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[23] J. Harlim and A.J. Majda<br>
+            <em> Test models for filtering with superparameterization</em><br>
+            <a href="http://dx.doi.org/10.1137/120890594">Multiscale Model.
+              Simul. 11(1), 282-308, 2013.</a> <a href="paper/sp_111212.pdf" class="style4">[pdf]</a></p>
+          <p>[22] K.A. Brown and J. Harlim<br>
+            <em> Assimilating irregularly spaced sparsely observed turbulent
+              signals with hierarchical Bayesian reduced stochastic filters</em><br>
+            <a href="http://dx.doi.org/10.1016/j.jcp.2012.11.006">J. Comput.
+              Phys. 235, 143-160, 2013.</a> <a href="paper/hbayes_110512.pdf" class="style4">[pdf]</a></p>
+          <p>[21] A.J. Majda and J. Harlim <a style="color: red;" href="http://iopscience.iop.org/0951-7715/page/MPE-insight"
+              class="style4">[in
+              Mathematics of Planet Earth Highlights]</a><br>
+            <em> Physics constrained nonlinear regression models for time series</em><br>
+            <a href="http://dx.doi.org/10.1088/0951-7715/26/1/201">Nonlinearity
+              26(1), 201-217, 2013.</a> <a href="paper/nonreg_081612.pdf" class="style4">[pdf]</a>
+          </p>
+          <p>[20] E.L. Kang, J. Harlim and A.J. Majda<br>
+            <em> Regression models with memory for the linear response of
+              turbulent dynamical systems</em><br>
+            <a href="http://dx.doi.org/10.4310/CMS.2013.v11.n2.a8">Comm. Math.
+              Sci. 11(2), 481-498, 2013.</a> <a href="paper/ARPFDT_04232012.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[19] J. Harlim and A.J. Majda<br>
+            <em> Test models for filtering and prediction of moisture-coupled
+              tropical waves</em><br>
+            <a href="http://dx.doi.org/10.1002/qj.1956">Q. J. R. Meteorol. Soc.
+              139, 119-136, 2013.</a> <a href="paper/tropicspreprintfeb28.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[18] E.L. Kang and J. Harlim<br>
+            <em> Filtering nonlinear spatio-temporal chaos with autoregressive
+              linear stochastic models</em><br>
+            <a href="http://dx.doi.org/10.1016/j.physd.2012.03.003">Physica D
+              241(12), 1099-1113, 2012.</a> <a href="paper/KH_AR_PhysicaD_030212.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[17] E.L. Kang and J. Harlim<br>
+            <em> Filtering partially observed multiscale systems with
+              heterogeneous multiscale methods-based reduced climate models</em><br>
+            <a href="http://dx.doi.org/10.1175/MWR-D-10-05067.1">Mon. Wea. Rev.
+              140(3), 860-873, 2012.</a> <a href="paper/KH_L96_09162011_MWR-D-10-05067.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[16] J. Harlim<br>
+            <em> Interpolating irregularly spaced observations for filtering
+              turbulent complex systems</em><br>
+            <a href="http://dx.doi.org/10.1137/100800427">SIAM J. Sci. Comput.
+              33(5), 2620-2640, 2011.</a> <a href="paper/jhinterp_rev3.pdf" class="style4">[pdf]</a></p>
+          <p>[15] J. Harlim<br>
+            <em> Numerical strategies for filtering partially observed stiff
+              stochastic differential equations</em><br>
+            <a href="http://dx.doi.org/10.1016/j.jcp.2010.10.016">J. Comput.
+              Phys. 230(3), 744-762, 2011.</a> <a href="paper/JCP2011_Har.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[14] A.J. Majda, J. Harlim, and B. Gershgorin<br>
+            <em> Mathematical strategies for filtering turbulent dynamical
+              systems</em><br>
+            <a href="http://dx.doi.org/10.3934/dcds.2010.27.441">Discrete
+              Contin. Dynam. Syst. A 27(2), 441-486, 2010.</a> <a href="paper/DCDS2010_MajHarGer.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[13] J. Harlim and A.J. Majda<br>
+            <em> Filtering turbulent sparsely observed geophysical flows</em><br>
+            <a href="http://dx.doi.org/10.1175/2009MWR3113.1">Mon. Wea. Rev.
+              138(4), 1050-1083, 2010.</a> <a href="paper/MWR2010_HarMaj.pdf" class="style4">[pdf]</a></p>
+          <p>[12] B. Gershgorin, J. Harlim, and A.J. Majda<br>
+            <em> Improving filtering and prediction of spatially extended
+              turbulent systems with model errors through stochastic parameter
+              estimation</em><br>
+            <a href="http://dx.doi.org/10.1016/j.jcp.2009.09.022">J. Comput.
+              Phys. 229(1), 32-57, 2010.</a> <a href="paper/JCP2010b_GerHarMaj.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[11] B. Gershgorin, J. Harlim, and A.J. Majda<br>
+            <em> Test models for improving filtering with model errors through
+              stochastic parameter estimation</em><br>
+            <a href="http://dx.doi.org/10.1016/j.jcp.2009.08.019">J. Comput.
+              Phys. 229(1), 1-31, 2010.</a> <a href="paper/JCP2010a_GerHarMaj.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[10] J. Harlim and A.J. Majda<br>
+            <em> Catastrophic filter divergence in filtering nonlinear
+              dissipative systems</em><br>
+            <a href="http://dx.doi.org/10.4310/CMS.2010.v8.n1.a3">Comm. Math.
+              Sci. 8(1), 27-42, 2010.</a> <a href="paper/CMS2010_HarMaj.pdf" class="style4">[pdf]</a></p>
+          <p>[9] J. Harlim and A.J. Majda<br>
+            <em> Filtering nonlinear dynamical systems with linear stochastic
+              models</em><br>
+            <a href="http://dx.doi.org/10.1088/0951-7715/21/6/008">Nonlinearity
+              21(6), 1281-1306, 2008.</a> <a href="paper/NON2008_HarMaj.pdf" class="style4">[pdf]</a></p>
+          <p>[8] J. Harlim and A.J. Majda<br>
+            <em> Mathematical strategies for filtering complex systems:
+              Regularly spaced sparse observations</em><br>
+            <a href="http://dx.doi.org/10.1016/j.jcp.2008.01.049">J. Comput.
+              Phys. 227(10), 5304-5341, 2008.</a> <a href="paper/JCP2008_HarMaj.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[7] E. Castronovo, J. Harlim, and A.J. Majda<br>
+            <em> Mathematical test criteria for filtering complex systems:
+              Plentiful observations</em><br>
+            <a href="http://dx.doi.org/10.1016/j.jcp.2007.12.016">J. Comput.
+              Phys. 227(7), 3678-3714, 2008.</a> <a href="paper/JCP2008_CasHarMaj.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[6] J. Harlim and B.R. Hunt<br>
+            <em> Four-dimensional local ensemble transform Kalman filter:
+              Numerical experiments with a global circulation model</em><br>
+            <a href="http://dx.doi.org/10.1111/j.1600-0870.2007.00255.x">Tellus
+              A 59(5), 731-748, 2007.</a> <a href="paper/TEA2007b_HarHun.pdf" class="style4">[pdf]</a></p>
+          <p>[5] J. Harlim and W.F. Langford<br>
+            <em> The cusp-Hopf bifurcation</em><br>
+            <a href="http://dx.doi.org/10.1142/S0218127407018622">Int. J Bif.
+              Chaos 17(8), 2547-2570, 2007.</a> <a href="paper/IJBC2007_HarLan.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[4] A.J. Majda and J. Harlim<br>
+            <em> Information flow between subspaces of complex dynamical systems</em>
+            <br>
+            <a href="http://dx.doi.org/10.1073/pnas.0703499104">Proc. Nat. Acad.
+              Sci. 104(23), 9558-9562, 2007.</a> <a href="paper/PNAS2007_MajHar.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[3] J. Harlim and B.R. Hunt<br>
+            <em> A non-Gaussian ensemble filter for assimilating infrequent
+              noisy observations</em><br>
+            <a href="http://dx.doi.org/10.1111/j.1600-0870.2007.00225.x">Tellus
+              A 59(2), 225-237, 2007.</a> <a href="paper/TEA2007a_HarHun.pdf" class="style4">[pdf]</a></p>
+          <p>[2] E.J. Fertig, J. Harlim, and B.R. Hunt<br>
+            <em> A comparative study of 4D-VAR and 4D ensemble Kalman filter:
+              Perfect model simulations with Lorenz-96</em> <br>
+            <a href="http://dx.doi.org/10.1111/j.1600-0870.2006.00205.x">Tellus
+              A 59(1), 96-100, 2007.</a> <a href="paper/TEA2007_FerHarHun.pdf"
+              class="style4">[pdf]</a></p>
+          <p>[1] J. Harlim, M. Oczkowski, J.A. Yorke, E. Kalnay, and B.R. Hunt<br>
+            <em> Convex error growth patterns in a global weather model</em><br>
+            <a href="http://dx.doi.org/10.1103/PhysRevLett.94.228501">Phys. Rev.
+              Lett. 94, 228501, 2005.</a> <a href="paper/PRL2005_HarOczYorKalHun.pdf"
+              class="style4">[pdf]</a>&nbsp;
+            </p></div>
+        <em> </em></div>
+      <em>
+        <!--end content -->
+        <div id="siteInfo"> ©April 2018 John Harlim </div>
+      </em></div>
+    <em>
+      <!--end pagecell1--> <br>
+      <script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(7,1,"hidden");
+			var menuitem2 = new menu(7,2,"hidden");
+			var menuitem3 = new menu(7,3,"hidden");
+			var menuitem4 = new menu(7,4,"hidden");
+			var menuitem5 = new menu(7,5,"hidden");
+			var menuitem6 = new menu(7,6,"hidden");
+			var menuitem7 = new menu(7,7,"hidden");
+    // -->
+    </script> </em>
+    
+  </body>
+</html>
